@@ -186,7 +186,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Senior Frontend Developer",
+    title: "Senior Frontend Engineer",
     desc: "Developing a highly scalable Fintech domain application on UI library for Axis Bank with JavaScript using different frameworks like React Js, TypeScript, React Native, Redux, Redux Thunk, React navigation, Next Js, Nuxt Js, Node Js.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/freecharge.jpeg",
