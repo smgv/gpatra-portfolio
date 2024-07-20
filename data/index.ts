@@ -1,4 +1,5 @@
 export const navItems = [
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
@@ -93,7 +94,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "NFT Checkout:",
+    title: "NFT Checkout",
     des: "Developed fiat-based NFT checkout using Vue.js, Socket.io, Tailwind CSS, and Stripe.js. That helps dApps in creating and deploying contracts, minting NFTs, and integrating a seamless fiat-based NFT Checkout experience for dApp users.",
     img: "/p4.svg",
     // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -180,6 +181,8 @@ export const workExperience = [
     desc: "Experienced Senior Fullstack Developer specializing in React, Vue.js, Node.js, and Web3 technologies, with a strong background in developing scalable and user-centric applications.",
     className: "md:col-span-2",
     thumbnail: "/web3auth.jpeg",
+    exp: "Dec 2022 - Present",
+    name: "Web3Auth",
   },
   {
     id: 2,
@@ -187,6 +190,8 @@ export const workExperience = [
     desc: "Developing a highly scalable Fintech domain application on UI library for Axis Bank with JavaScript using different frameworks like React Js, TypeScript, React Native, Redux, Redux Thunk, React navigation, Next Js, Nuxt Js, Node Js.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/freecharge.jpeg",
+    exp: "Aug 2021 - Dec 2022",
+    name: "Freecharge",
   },
   {
     id: 3,
@@ -194,6 +199,8 @@ export const workExperience = [
     desc: "Worked in the Financial Sector for more than two years for one of the largest banks in the United States. Developed highly scalable applications using JavaScript, React Js, TypeScript, Redux, ContextApi, Redux Thunk, Angular, Frontend libraries like Bootstrap 4+, Material designs",
     className: "md:col-span-2",
     thumbnail: "/accenture.jpeg",
+    exp: "Sept 2018 - Aug 2021",
+    name: "Accenture",
   },
   // {
   //   id: 4,

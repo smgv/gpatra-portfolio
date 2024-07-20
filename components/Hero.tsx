@@ -5,8 +5,18 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id.slice(1));
+
+    if (section) {
+      window.scrollTo({
+        behavior: "smooth",
+      });
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36" id="home">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -53,17 +63,21 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Ganesh Patra, a Senior FullStack Developer based in
-            India.
+            Hi! 👋 I&apos;m{" "}
+            <span className="font-bold text-3xl">Ganesh Patra</span>, a Senior
+            Frontend Engineer based in India.
           </p>
 
-          <a href="#about">
+          <button
+            onClick={() => scrollToSection("#about")}
+            className="appearance-none"
+          >
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </button>
         </div>
       </div>
     </div>

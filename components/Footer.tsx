@@ -3,8 +3,20 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Link from "next/link";
+import { SlArrowUp } from "react-icons/sl";
 
 const Footer = () => {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id.slice(1));
+
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -33,9 +45,9 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-4">
         <p className="md:text-base text-sm md:font-normal font-light">
-          &copy; 2024 Ganesh Patra. All rights reserved.
+          &copy; 2024 Ganesh Patra - Portfolio
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
@@ -50,6 +62,13 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      <button
+        className="text-center w-full flex flex-col items-center justify-center"
+        onClick={() => scrollToSection("#home")}
+      >
+        <SlArrowUp className="text-3xl font-medium animate-bounce text-white" />
+        <p className="text-[10px] font-normal uppercase mt-1">Got to home</p>
+      </button>
     </footer>
   );
 };
