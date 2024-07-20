@@ -69,7 +69,7 @@ const Hero = () => {
           </p>
 
           <button
-            onClick={() => scrollToSection("#about")}
+            onClick={() => scrollToSection("#projects")}
             className="appearance-none"
           >
             <MagicButton
